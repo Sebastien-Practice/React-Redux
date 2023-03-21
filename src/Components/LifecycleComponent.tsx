@@ -22,7 +22,7 @@ class LifecycleComponent extends Component<Props, State> {
 
   shouldComponentUpdate(nextProps: Props, nextState: State): boolean {
     console.log('shouldComponentUpdate');
-    return nextState.count !== this.state.count;
+    return nextState.count !== this.state.count || nextProps.title !== this.props.title;
   }
 
   componentDidUpdate(): void {
