@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import AddUser from './Components/Users/AddUser';
-import UsersList from './Components/Users/UsersList';
+import LifecycleComponent from './components/LifecycleComponent';
+import AddUser from './components/Users/AddUser';
+import UsersList from './components/Users/UsersList';
 
 function App() { 
   const [usersList, setUsersList] = useState([]);
@@ -15,6 +16,7 @@ function App() {
     <div>
       <AddUser onAddUser={addUserHandler}/>
       <UsersList users={usersList} />
+      <LifecycleComponent title="LifeCycle Component"/>
     </div>
   );
 }
