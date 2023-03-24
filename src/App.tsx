@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import LifecycleComponent from './components/LifecycleComponent';
-import AddUser from './components/Users/AddUser';
-import UsersList from './components/Users/UsersList';
+import LifecycleComponent from './Components/LifecycleComponent';
+import AddUser from './Components/Users/AddUser';
+import UsersList from './Components/Users/UsersList';
 
 function App() { 
   const [usersList, setUsersList] = useState([]);
