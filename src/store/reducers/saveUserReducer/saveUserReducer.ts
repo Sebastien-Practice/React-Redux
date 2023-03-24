@@ -9,9 +9,10 @@ const initialState: pageState = {
 const saveUserReducer = (state = initialState, action: savedUser) => {
     switch (action.type) {
         case actionTypes.SAVE_USER:
+            
             return {
                 ...state,
-                userList: action.payload.slice(),
+                userList: state.savedUser.push(action.payload.slice()),
             };
             default:
                 return {
