@@ -1,6 +1,7 @@
 import { actionTypes } from '../actionTypes/ActionTypes';
+import { savedUser } from '../types/SaveUserType/Type';
 
-export const saveUser = (payload: string[]) => ({
+export const saveUser = (payload: savedUser) => ({
     type: actionTypes.SAVE_USER,
     payload
 })

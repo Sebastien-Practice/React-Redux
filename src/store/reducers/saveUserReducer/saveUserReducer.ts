@@ -11,7 +11,7 @@ const saveUserReducer = (state = initialState, action: savedUser) => {
         case actionTypes.SAVE_USER:
             return {
                 ...state,
-                partsSelected: action.payload.slice(),
+                userList: action.payload.slice(),
             };
             default:
                 return {
